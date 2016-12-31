@@ -1,0 +1,21 @@
+Publisher\Entry\Xing\Mode\Recommendation\XingForumRecommendation:
+    properties:
+        title:
+            - Length:
+                #'@constant("Publisher\\Entry\\Xing\\XingForumEntry::MAX_LENGTH_OF_TITLE")'
+                max: 254
+                maxMessage: "The title shouldn't exceed {{ limit }} characters."
+    getters:
+        messagePayload:
+            - Length:
+                #'@constant("Publisher\\Entry\\Xing\\XingForumEntry::MAX_LENGTH_OF_MESSAGE")'
+                max: 9999
+                maxMessage: "Message and URL combined shouldn't exceed {{ limit }} characters."
+
+Publisher\Entry\Xing\Mode\Recommendation\XingUserRecommendation:
+    getters:
+        messagePayload:
+            - Length:
+                #'@constant("Publisher\\Entry\\Xing\\XingUserEntry::MAX_LENGTH_OF_MESSAGE")'
+                max: 420
+                maxMessage: "Title, message and URL combined shouldn't exceed {{ limit }} characters."

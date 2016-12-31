@@ -1,0 +1,32 @@
+{
+    "name": "publisher/entity_xing_recommendation",
+    "description": "Entities of Xing Entries for the Mode Recommendation",
+    "keywords": ["publisher", "entity", "xing", "recommendation", "publish", "post", "oauth"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jacqueline Lueken",
+            "email": "jac_lueken@live.de"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "publisher/publisher": "dev-master",
+        "publisher/mode_recommendation" : "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7",
+        "symfony/validator": "^3.1",
+        "publisher/entry_xing": "dev-master"
+    },
+    "suggest": {
+        "symfony/validator": "Validate the entities with the config provided in Resources/config/validation.xml",
+        "publisher/entry_xing": "Required by the validation config / Reference for validation"
+    },
+    "autoload": {
+        "psr-4": {
+            "Publisher\\Entry\\Xing\\Mode\\Recommendation\\": "src/",
+            "Unit\\": "tests/Unit"
+        }
+    }
+}
