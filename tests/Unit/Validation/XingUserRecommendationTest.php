@@ -9,6 +9,9 @@ use Publisher\Entry\Xing\XingUserEntry;
 class XingUserRecommendationTest extends AbstractRecommendationTest
 {
     
+    /**
+     * @inheritDoc
+     */
     public function getExceededMessageData()
     {
         $max = XingUserEntry::MAX_LENGTH_OF_MESSAGE;

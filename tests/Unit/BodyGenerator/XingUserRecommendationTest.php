@@ -8,11 +8,17 @@ use Publisher\Entry\Xing\Mode\Recommendation\XingUserRecommendation;
 class XingUserRecommendationTest extends RecommendationTest
 {   
     
+    /**
+     * @inheritDoc
+     */
     protected function getTestEntity()
     {
         return new XingUserRecommendation();
     }
     
+    /**
+     * @inheritDoc
+     */
     public function getSampleContentAndBody()
     {
         $title = 'test-title';

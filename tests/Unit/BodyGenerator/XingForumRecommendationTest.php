@@ -8,11 +8,17 @@ use Publisher\Entry\Xing\Mode\Recommendation\XingForumRecommendation;
 class XingForumRecommendationTest extends RecommendationTest
 {   
     
+    /**
+     * @inheritDoc
+     */
     protected function getTestEntity()
     {
         return new XingForumRecommendation();
     }
     
+    /**
+     * @inheritDoc
+     */
     public function getSampleContentAndBody()
     {
         $contentMinusUrl = array(
